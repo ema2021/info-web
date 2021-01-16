@@ -1,0 +1,44 @@
+.niveau{
+    text-align: center;
+}
+.matieres{
+    display: inline-grid;
+    grid-template-columns: auto auto  ;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    width: 76%;
+    grid-gap:2%;
+}
+#modulejpg{
+    height:70%;
+    width: 70%;
+    border-radius:4px;
+    transition-duration: 1s;
+}
+#modulejpg:hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+#module{
+    height: 350px;
+    border-radius: 4px;
+    border: 2px dashed #7d8588;
+    padding: 4%;
+    border
+    font-size: 30px;
+    text-align: center;
+    /* background-color: rgb(226, 226, 220); */
+}
+#module-btn{
+    color:white;
+    height: 30px;
+    background-color: #553041;
+    border:none;
+    border-radius:4px;
+    width:50%;
+    margin-top:15px;
+}
+#moduletitle{
+    color: cadetblue;
+    margin-top:15px;
+}
