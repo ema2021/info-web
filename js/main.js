@@ -30,3 +30,18 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 } 
+function accedercours(cours){
+  document.getElementById(cours).style.display='inline-grid';
+  document.getElementById('matiere').style.display='none';
+  document.getElementById('rtr-btn').style.display='block';
+}
+function retour(){
+  document.getElementById('matiere').style.display='inline-grid';
+  document.getElementById('lescoursdemodule1').style.display='none';
+  document.getElementById('rtr-btn').style.display='none';
+}
+function voir(pdf,courses){
+  document.getElementById(pdf).style.display='block';
+  document.getElementById(courses).style.display='none';
+
+}

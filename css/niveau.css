@@ -42,3 +42,50 @@
     color: cadetblue;
     margin-top:15px;
 }
+#lescoursdemodule1{
+    display: none;
+    /* display: inline-grid; */
+    grid-template-columns: auto auto  ;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    width: 76%;
+    grid-gap:2%;
+}
+.cours{
+    background-color: #7d8588;
+    border-radius: 3px;
+    padding: 3%;
+}
+.cours button{
+    background-color: #553041;
+    border:none;
+    border-radius: 4px;
+    width: 20%;
+    height: 25px;
+    color:white;
+    font-size: 100%;
+    font-weight: bold;
+}
+.cours p,.cours p,.cours button,.cours a{
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+#rtr-btn{
+    width: 10%;
+    height: 10%;
+    margin-top:50px;
+    margin-left: 2%;
+    background-color: grey;
+    display: none;
+}
+#courspdf{
+    display: none;
+    border: none;
+    /* border-radius: 10px; */
+    /* background-color: #553041; */
+    margin-top: 10px;
+    width: 96%;
+    /* height: 500px; */
+}

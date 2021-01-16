@@ -149,12 +149,13 @@
           }
           </script>
     </header>
+    <button type="button" id="rtr-btn" onclick="retour()">&laquo;      Retour</button>
     <main class="niveau" id="sticky">
-        <div class="matieres">
+        <div class="matieres" id="matiere">
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
                 <h4 id="moduletitle">Francais</h4>
-                <button id="module-btn">Acceder</button>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule1')">Acceder</button>
                 
             </div>
             <div id="module">
@@ -176,6 +177,63 @@
                 
             </div>
         </div>
+        <div class="lescoursdemodule1" id="lescoursdemodule1">
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" onclick="voir('courspdf','lescoursdemodule1')">Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+        </div>
+        <div id="courspdf">
+            <object
+              data='../pdf/svt/la-chaleur-et-les-changements-d-etat-physique-de-la-matiere-cours-1.pdf'
+              type="application/pdf"
+              width="76%"
+              height="900"
+            
+            >
+        
+              <iframe
+                src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
+                width="80%"
+                height="678"
+              >
+              <p>This browser does not support PDF!</p>
+              </iframe>
+        
+            </object>
+          </div>
     </main>
     <footer>
         <div class="footer_newsletter">
