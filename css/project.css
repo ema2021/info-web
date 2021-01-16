@@ -642,7 +642,7 @@ input{
     background-color: #553041;
     color: white;
     font-size: 100%;
-    padding: 1%;
+    /* padding: 1%; */
   }
   #search-btn{
     background: #553041;
