@@ -1,8 +1,9 @@
-function nav_a_active(id_a){
-    x=document.getElementById(id_a).parentElement;
+var rtr_btn = 0;//button de retour
+function nav_a_active(id_a) {
+  x = document.getElementById(id_a).parentElement;
 
 }
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 // Get the header
 var header = document.getElementById("myHeader");
@@ -29,19 +30,44 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
-} 
-function accedercours(cours){
-  document.getElementById(cours).style.display='inline-grid';
-  document.getElementById('matiere').style.display='none';
-  document.getElementById('rtr-btn').style.display='block';
 }
-function retour(){
-  document.getElementById('matiere').style.display='inline-grid';
-  document.getElementById('lescoursdemodule1').style.display='none';
-  document.getElementById('rtr-btn').style.display='none';
+function accedercours(cours) {
+  document.getElementById(cours).style.display = 'inline-grid';
+  document.getElementById('matiere').style.display = 'none';
+  document.getElementById('rtr-btn').style.display = 'block';
+  rtr_btn++;
 }
-function voir(pdf,courses){
-  document.getElementById(pdf).style.display='block';
-  document.getElementById(courses).style.display='none';
 
+function voir(pdf, courses, pdfpath) {
+  document.getElementById(pdf).style.display = 'block';
+  document.getElementById(courses).style.display = 'none';
+  document.getElementById('pdfhere').data = pdfpath;
+  rtr_btn++;
 }
+function rtrbtn_(a, b) {
+  document.getElementById(a).style.display = 'inline-grid';
+  document.getElementById(b).style.display = 'none';
+  rtr_btn--;
+}
+function retour(id_pluschar='') {
+  switch (rtr_btn) {
+    case 1:
+      dest='matiere'+id_pluschar;
+      maintenant='lescoursdemodule1'+id_pluschar;
+      rtrbtn_(dest,maintenant);
+      document.getElementById('rtr-btn').style.display = 'none';
+      break;
+    case 2:
+      dest='lescoursdemodule1'+id_pluschar;
+      maintenant='courspdf'+id_pluschar;
+      rtrbtn_(dest,maintenant);
+      break;
+    default:
+      break;
+
+  }
+}
+// function searchcours(){
+//   document.getElementById('tr_cours').style.display='none';
+//   document.getElementsById('acc-search').style.display='';
+// }

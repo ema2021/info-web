@@ -42,7 +42,7 @@
     color: cadetblue;
     margin-top:15px;
 }
-#lescoursdemodule1{
+.lescoursdemodule1{
     display: none;
     /* display: inline-grid; */
     grid-template-columns: auto auto  ;
