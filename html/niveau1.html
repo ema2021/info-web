@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>Niveau1</title>
     <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/niveau.css">
@@ -21,34 +21,14 @@
             </li>
             <li>
                 <a><img src="../src/Copy of Easy5.png" id="logo"></a>
-            </li>
-            <!-- <li id="nav_links"> -->
-            <!--  <a href="acceuil.html" id="nav_a">Acceuil</a> -->
-            <!-- </li> -->
-            <!-- <li id="nav_links"> -->
-            <!-- <a href="langages.html" id="nav_a">Langages</a> -->
-            <!-- </li> -->
-            <!-- <li id="nav_links"> -->
-            <!--  <a href="soutien.html" id="nav_a">Soutien</a> -->
-            <!-- </li> -->
-            <!-- <li id="nav_links"> -->
-            <!-- <a href="niveau1.html" id="nav_a">Niveau 1</a> -->
-            <!-- <div class="dropdown"> -->
-            <!-- <button class="dropbtn">College <i class="fa fa-caret-down"></i></button> -->
-            <!--  <div class="dropdown-content"> -->
-            <!--  <a href="niveau1.html" id="nav_a">1 ere Annee</a> -->
-            <!--  <a href="niveau2.html" id="nav_a">2 eme Annee</a> -->
-            <!--  <a href="niveau3.html" id="nav_a">3 eme Annee</a> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </li> -->
+            </li>`
             <li id="search_bar">
                 <input type="search" id="isearch" placeholder="Seacrh here">
                 <button style="font-size:18px;" id="search-btn">
                     <i class="fa fa-search"></i>
                 </button>
-                <button type="button"  id="sign-btn" onclick="document.getElementById('id02').style.display='block'">Sign up</button>
-                <button type="button"  id="login-btn"  onclick="document.getElementById('id01').style.display='block'">login</button>
+                <button type="button"  id="sign-btn" onclick="document.getElementById('id02').style.display='block'">S'inscrire</button>
+                <button type="button"  id="login-btn"  onclick="document.getElementById('id01').style.display='block'">Connecter</button>
             </li>
         </ul>
         <div id="mySidebar" class="sidebar">
@@ -74,16 +54,16 @@
               </div>
           
               <div class="container">
-                <label for="uname"><b>Username</b></label>
+                <label for="uname"><b>Nom D'utilisateur:</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" id="loginInput" required><br>
                 <span id="uname_mess"></span><br>
           
-                <label for="psw"><b>Password</b></label>
+                <label for="psw"><b>Mot de Passe:</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" id="loginInput"required>
                   
-                <button type="submit" id="Lginbutton">Login</button>
+                <button type="submit" id="Lginbutton">Se connecter</button>
                 <label>
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                  <input type="checkbox" checked="checked" name="remember"> Rester Connecte
                 </label>
               </div>
           
@@ -102,24 +82,24 @@
               </div>
           
               <div class="container">
-                <label for="uname"><b>Name:</b></label>
+                <label for="uname"><b>Nom:</b></label>
                 <input type="text" placeholder="Enter Name" name="name" id="signupName" oninput="validateName('signupName', 'signupName_mess')" required ><br>
                 <span id="signupInput_mess"></span><br>
-                <label for="uname"><b>Surname:</b></label>
+                <label for="uname"><b>Prenom:</b></label>
                 <input type="text" placeholder="Entrer Votre Prenom" name="surname" id="signSurname" required >
-                <label for="uname"><b>Username:</b></label>
+                <label for="uname"><b>Nom D'utilisateur:</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" id="signUsername" required >
-                <label for="uname"><b>email:</b></label>
+                <label for="uname"><b>Email:</b></label>
                 <input type="email" placeholder="Enter Email" name="uemail" id="signEmail" required >
           
-                <label for="psw"><b>Password</b></label>
+                <label for="psw"><b>Mot de Passe:</b></label>
                 <input type="password" placeholder="Enter Password" name="psw"  required >
                   
-                <button type="submit" id="signupbutton">Signup</button>
+                <button type="submit" id="signupbutton">S'inscrire</button>
               </div>
           
               <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Annuler</button>
               </div>
             </form>
           </div>
@@ -149,7 +129,7 @@
           }
           </script>
     </header>
-    <button type="button" id="rtr-btn" onclick="retour()">&laquo;      Retour</button>
+    <button type="button" id="rtr-btn" onclick="retour('')">&laquo;      Retour</button>
     <main class="niveau" id="sticky">
         <div class="matieres" id="matiere">
             <div id="module">
@@ -161,19 +141,19 @@
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
                 <h4 id="moduletitle">Francais</h4>
-                <button id="module-btn">Acceder</button>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule2')">Acceder</button>
                 
             </div>
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
                 <h4 id="moduletitle">Francais</h4>
-                <button id="module-btn">Acceder</button>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule3')">Acceder</button>
                 
             </div>
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
                 <h4 id="moduletitle">Francais</h4>
-                <button id="module-btn">Acceder</button>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule4')">Acceder</button>
                 
             </div>
         </div>
@@ -182,7 +162,121 @@
                 <h4>Titre de cours</h4>
                 <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" onclick="voir('courspdf','lescoursdemodule1')">Voir</button>
+                <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+        </div>        
+        <div class="lescoursdemodule1" id="lescoursdemodule2">
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+        </div>
+        <div class="lescoursdemodule1" id="lescoursdemodule3">
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" >Voir</button>
+            </div>
+        </div>
+        <div class="lescoursdemodule1" id="lescoursdemodule4">
+            <div class="cours">
+                <h4>Titre de cours</h4>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <a href="">Telecharger</a>
+                <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
@@ -222,14 +316,15 @@
               width="76%"
               height="900"
             
-            >
+            id="pdfhere">
         
               <iframe
                 src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
                 width="80%"
                 height="678"
               >
-              <p>This browser does not support PDF!</p>
+              <p>Ce navigator ne supporte pas PDF
+                  !</p>
               </iframe>
         
             </object>
@@ -238,8 +333,9 @@
     <footer>
         <div class="footer_newsletter">
             <h1 style="color: white;font-weight: bold;">S'INSCRIRE À LA NEWSLETTER</h1>
-            <input type="email" placeholder="Email" id="footer_email" oninput="validateEmail('footer_email', 'ft_email_mess')" >
-            <button type="button" href="#" style="font-size:18px;"  >SUBMIT</button><br><br>
+            <input type="email" placeholder="Email" id="footer_email"
+                oninput="validateEmail('footer_email', 'ft_email_mess')">
+            <button type="button" href="#" style="font-size:18px;">SUBMIT</button><br><br>
             <span id="ft_email_mess" style="color:#8b9974;"></span>
         </div>
         <div class="footer_links">
@@ -251,26 +347,25 @@
                 </li>
                 <li><i class="fa fa-phone" aria-hidden="true"
                         style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 22px;"></i>
-                    (153) 207-9061</li>
+                    +212(0)6079061</li>
                 <li><i class="fa fa-map-marker" aria-hidden="true"
                         style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 22px;"></i>
                     7487 Gaylord Fort</li>
                 <li><i class="fa fa-envelope" aria-hidden="true"
                         style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 18px;"></i>
-                    example@gmail.com</li>
+                    easy-course@gmail.com</li>
             </ul>
             <ul>
                 <li id="he_">
-                    <h2>MENU</h2>
+                    <h2>Suivez NousEn Social Media</h2>
                 </li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Gallery</li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
             </ul>
         </div>
     </footer>
-
 </body>
 
 </html>
