@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+<!-- use full mode of HTML5 -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <!-- Character Encoding - -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
     <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/soutien.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/main.js"></script>
     <script src="../js/validate.js"></script>
@@ -46,8 +49,8 @@
                 <button style="font-size:18px;" id="search-btn">
                     <i class="fa fa-search"></i>
                 </button>
-                <button type="button"  id="sign-btn" onclick="document.getElementById('id02').style.display='block'">Sign up</button>
-                <button type="button"  id="login-btn"  onclick="document.getElementById('id01').style.display='block'">login</button>
+                <button type="button"  id="sign-btn" onclick="document.getElementById('id02').style.display='block'">S'inscrire</button>
+                <button type="button"  id="login-btn"  onclick="document.getElementById('id01').style.display='block'">Connecter</button>
             </li>
         </ul>
         <div id="mySidebar" class="sidebar">
@@ -148,29 +151,30 @@
           </script>
     </header>
     <main class="contenu_principal" id="sticky">
-        <div class="slides">
-            <center>
-                <h1 style="color: black;padding-top:50px;">
-                    <span style="color :black;">E</span>asy
-                    <span style="color:black;">C</span>ourse
-
-                </h1>
-            </center>
-            <p style="padding: 0px;">
-            <H2 style="margin-top: 20px;padding-left: 25px;"> Avoir votre Cours toujours pres de vous </H2>
-            <center>
-                <p style="padding-top: 12px;">
-                <h3 style="color: black;margin-top: 20px;">Cours, Exercices, </h3>
-                <h3 style="color: black;">Examen, Document </h3>
-                </p>
-            </center>
+        <div class="descrip">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit possimus sequi ipsa illo culpa sit nulla, dolorem placeat? Est exercitationem molestias sit, consectetur quod voluptate magni autem aut! Esse, repellat.
             </p>
-            <button type="button"><i class="fa fa-search" style="margin-right: 10px;"></i>Trouver un cours</button>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, officia.</h1>
+            <button type="button"onclick="inscrire()">S'inscrire</button>
         </div>
-
-
-
     </main>
+    <div class="inscrire_form">
+        <form action="">
+            <label for="name"><b>Votre Nom:</b></label><br><br>
+            <input type="text" name="" id="ilham"><br><br>
+            <label for="name"><b>Votre Nom:</b></label><br><br>
+            <input type="text" name="" id="ilham"><br><br>
+            <label for="name"><b>Votre Nom:</b></label><br><br>
+            <input type="text" name="" id="ilham"><br><br>
+            <label for="name"><b>Votre Nom:</b></label><br><br>
+            <input type="text" name="" id="ilham"><br><br>
+            <label for="name"><b>Votre Nom:</b></label><br><br>
+            <input type="email" name="" id="ilham"><br><br>
+            <label for="name"><b>Votre Nom:</b></label><br><br>
+            <input type="password" name="" id="ilham"><br><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
     <footer>
         <div class="footer_newsletter">
             <h1 style="color: white;font-weight: bold;">S'INSCRIRE À LA NEWSLETTER</h1>

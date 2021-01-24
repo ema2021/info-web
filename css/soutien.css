@@ -1,0 +1,30 @@
+.descrip{
+    padding: 5%;
+    text-align: center;
+}
+.descrip p,.descrip h1,.descrip button{
+    margin-top: 5%;
+}
+.descrip{
+
+}
+
+.inscrire_form{
+    width: 85%;
+    margin:auto;
+    text-align: center;
+    background: rgb(109, 109, 105);
+    padding: 5%;
+    border-radius: 3px;
+}
+#ilham{
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid purple;
+    height: 40px;
+    border-radius: 3px;
+}
+.inscrire_form input[type="submit"]{
+    width: 40%;
+    height: 40px;
+}

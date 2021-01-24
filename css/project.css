@@ -554,32 +554,37 @@ input{
     top: 0;
     width: 100%; /* Full width */
     height:100%; /* Full height */
-    /* overflow: auto;  */
+    overflow: auto; 
     /* Enable scroll if needed */
     /* background-color: rgb(0,0,0);  */
     /* Fallback color */
     background-color: rgba(0,0,0,0.4);
      /* Black w/ opacity */
-    padding-top: 60px;
+    /* padding-top: 60px; */
     
   }
+  #id02{
+    height:890px;
+  }
+
   
   /* Modal Content/Box */
   .modal-content {
     background-color: white;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
+     /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     border-radius: 5px;
     min-width: 60%;
     max-width: 500px;
-    height:80%;
+    height:100%;
     
     /* min-width: 50%; */
     /* Could be more or less, depending on screen size */
   }
   .modal img{
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
   }
   
   /* The Close Button (x) */
@@ -657,6 +662,9 @@ input{
     border-top-left-radius:0 ;
     border-bottom-left-radius:0 ;
 
+  }
+  #button-cours{
+    min-width: 40px;
   }
   .acceuil-search{
     display: inline-grid;
