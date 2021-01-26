@@ -31,9 +31,10 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-function accedercours(cours) {
+function accedercours(cours,mod_,matiere) {
+  document.getElementById(mod_).style.display = 'inline-grid';
   document.getElementById(cours).style.display = 'inline-grid';
-  document.getElementById('matiere').style.display = 'none';
+  document.getElementById(matiere).style.display = 'none';
   document.getElementById('rtr-btn').style.display = 'block';
   rtr_btn++;
 }
@@ -41,7 +42,7 @@ function accedercours(cours) {
 function voir(pdf, courses, pdfpath) {
   document.getElementById(pdf).style.display = 'block';
   document.getElementById(courses).style.display = 'none';
-  document.getElementById('pdfhere').data = pdfpath;
+  document.getElementById(pdf).data = pdfpath;
   rtr_btn++;
 }
 function rtrbtn_(a, b) {
@@ -49,18 +50,18 @@ function rtrbtn_(a, b) {
   document.getElementById(b).style.display = 'none';
   rtr_btn--;
 }
-function retour(id_pluschar='') {
+function retour(id_pluschar = '') {
   switch (rtr_btn) {
     case 1:
-      dest='matiere'+id_pluschar;
-      maintenant='lescoursdemodule1'+id_pluschar;
-      rtrbtn_(dest,maintenant);
+      dest = 'matiere' + id_pluschar;
+      maintenant = 'lescoursdemodule1' + id_pluschar;
+      rtrbtn_(dest, maintenant);
       document.getElementById('rtr-btn').style.display = 'none';
       break;
     case 2:
-      dest='lescoursdemodule1'+id_pluschar;
-      maintenant='courspdf'+id_pluschar;
-      rtrbtn_(dest,maintenant);
+      dest = 'lescoursdemodule1' + id_pluschar;
+      maintenant = 'courspdf' + id_pluschar;
+      rtrbtn_(dest, maintenant);
       break;
     default:
       break;
@@ -71,3 +72,12 @@ function retour(id_pluschar='') {
 //   document.getElementById('tr_cours').style.display='none';
 //   document.getElementsById('acc-search').style.display='';
 // }
+function inscrire() {
+  document.getElementById('inscrire_form').style.display = 'block';
+}
+function show(id_) {
+  document.getElementById(id_).style.display = 'block';
+}
+function hide(id_) {
+  document.getElementById(id_).style.display = 'none';
+}

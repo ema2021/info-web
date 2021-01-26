@@ -15,8 +15,8 @@
     width:100%;
     max-height: 100%;
     min-height: 500px;
-    background: rgba( 85, 33, 57, 0.10 );
-    box-shadow: 10px 15px 15px 0 rgba(164, 89, 179, 0.37);
+    background: rgba(161, 141, 150, 0.1);
+    /* box-shadow: 10px 15px 15px 0 rgba(164, 89, 179, 0.37); */
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 18.5px );
     /* border-radius: 10px; */
@@ -49,4 +49,53 @@
     color: white;
     font-size: 100%;
 
+}
+#sabonner{
+    width: 50%;
+    margin-left: 25%;
+}
+.inscrirePourLangage{
+    background:#e8eae6;
+    width: 80%;
+    margin:auto;
+    padding: 3%;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding-left: 10%;
+    display: none;
+}
+.inscrirePourLangage input[type=text],.inscrirePourLangage input[type=email]{
+    width:70%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 10px;
+}
+.inscrirePourLangage span{color: red;}
+.inscrirePourLangage input[type=submit],#annuler_sabboner{
+    width: 30%;
+    height: 37px;
+    background: #553041;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+.inscrirePourLangage input:focus{
+    outline: 1px solid #552139;
+}
+.inscrirePourLangage label{
+    /* color: #553041; */
+    font-weight: bold;
+}
+#annuler_sabboner{
+    background: #633b38;
+    width: 20%;
+    font-size: 100%;
+    padding-bottom: 2%;
+    /* padding:auto; */
+}
+#lang_label{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #633b38;
 }

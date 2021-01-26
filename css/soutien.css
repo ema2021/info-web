@@ -11,6 +11,7 @@
 
 .inscrire_form{
     width: 85%;
+    display: none;
     margin:auto;
     text-align: center;
     background: rgb(109, 109, 105);
@@ -20,7 +21,7 @@
 #ilham{
     width: 50%;
     border: none;
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid #553041;
     height: 40px;
     border-radius: 3px;
 }

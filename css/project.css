@@ -323,7 +323,7 @@ input{
     border:5px solid white;
 }
 .footer_links ul{
-    width: 12%;
+    width: 100%;
     float: right;
     list-style-type: none;
     margin: 0;
@@ -343,7 +343,7 @@ input{
     padding-bottom: 8px;
 }
 #footer_contact{
-    /* margin-left: 45%; */
+  width: 25%;
 }
 /* Css Pour la page contactez-nous */
 /* .contact_div{
@@ -438,6 +438,7 @@ input{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    border-bottom-right-radius: 10px;
   }
   
   /* The sidebar links */
@@ -674,6 +675,8 @@ input{
     height:50px;
     grid-template-columns: 90% auto;
     margin-top: 10%;
+    /* border-top-left-radius:10px ; */
+    /* border-bottom-left-radius:10px ; */
     /* display: none; */
   }
   #isearch_acc{
@@ -698,12 +701,20 @@ input{
     border-bottom-left-radius:0 ;
     margin-left: 0;
   }
-  #social_media a{
+  #social_media {
+    width: auto;
+  }
+  #social_media li a{
     height:25px;
     width:25px;
     font-size: 100%;
     /* padding-top: 5%; */
-    border-radius:50%;
+    border-radius: 50% ;
     text-align: center;
-    padding-top: 12px;
+    padding-top:7px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: none;
+    text-decoration: none;
+    /* padding-top: 12px; */
   }
