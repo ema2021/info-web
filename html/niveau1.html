@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="../css/niveau.css">
     <script src="../js/main.js"></script>
     <script src="../js/validate.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+
+<body
+    style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
     <header id="myHeader">
         <ul class="monnavbar">
             <li>
@@ -27,8 +30,10 @@
                 <button style="font-size:18px;" id="search-btn">
                     <i class="fa fa-search"></i>
                 </button>
-                <button type="button"  id="sign-btn" onclick="document.getElementById('id02').style.display='block'">S'inscrire</button>
-                <button type="button"  id="login-btn"  onclick="document.getElementById('id01').style.display='block'">Connecter</button>
+                <button type="button" id="sign-btn"
+                    onclick="document.getElementById('id02').style.display='block'">S'inscrire</button>
+                <button type="button" id="login-btn"
+                    onclick="document.getElementById('id01').style.display='block'">Connecter</button>
             </li>
         </ul>
         <div id="mySidebar" class="sidebar">
@@ -37,298 +42,322 @@
             <a href="langages.html">Langages</a>
             <a href="soutien.html">Soutien</a>
             <div class="dropdown">
-                <button class="dropbtn">Cours  <i class="fa fa-caret-down"></i></button>
+                <button class="dropbtn">Cours <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content">
-                  <a href="niveau1.html"id="nav_a">1 ere Annee</a>
-                  <a href="niveau2.html" id="nav_a">2 eme Annee</a>
-                  <a href="niveau3.html"id="nav_a">3 eme Annee</a>
+                    <a href="niveau1.html" id="nav_a">1 ere Annee</a>
+                    <a href="niveau2.html" id="nav_a">2 eme Annee</a>
+                    <a href="niveau3.html" id="nav_a">3 eme Annee</a>
                 </div>
-              </div>
-          </div>
-          <div id="id01" class="modal">
-  
+            </div>
+        </div>
+        <div id="id01" class="modal">
+
             <form class="modal-content animate" action="/action_page.php" method="post">
-              <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="../src/img_avatar2.png" alt="Avatar" class="avatar">
-              </div>
-          
-              <div class="container">
-                <label for="uname"><b>Nom D'utilisateur:</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" id="loginInput" required><br>
-                <span id="uname_mess"></span><br>
-          
-                <label for="psw"><b>Mot de Passe:</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" id="loginInput"required>
-                  
-                <button type="submit" id="Lginbutton">Se connecter</button>
-                <label>
-                  <input type="checkbox" checked="checked" name="remember"> Rester Connecte
-                </label>
-              </div>
-          
-              <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-              </div>
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="../src/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Nom D'utilisateur:</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" id="loginInput" required><br>
+                    <span id="uname_mess"></span><br>
+
+                    <label for="psw"><b>Mot de Passe:</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="loginInput" required>
+
+                    <button type="submit" id="Lginbutton">Se connecter</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Rester Connecte
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
             </form>
-          </div>
-          <div id="id02" class="modal">
-  
+        </div>
+        <div id="id02" class="modal">
+
             <form class="modal-content animate" action="/action_page.php" method="post">
-              <div class="imgcontainer">
-                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="../src/img_avatar2.png" alt="Avatar" class="avatar">
-              </div>
-          
-              <div class="container">
-                <label for="uname"><b>Nom:</b></label>
-                <input type="text" placeholder="Enter Name" name="name" id="signupName" oninput="validateName('signupName', 'signupName_mess')" required ><br>
-                <span id="signupInput_mess"></span><br>
-                <label for="uname"><b>Prenom:</b></label>
-                <input type="text" placeholder="Entrer Votre Prenom" name="surname" id="signSurname" required >
-                <label for="uname"><b>Nom D'utilisateur:</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" id="signUsername" required >
-                <label for="uname"><b>Email:</b></label>
-                <input type="email" placeholder="Enter Email" name="uemail" id="signEmail" required >
-          
-                <label for="psw"><b>Mot de Passe:</b></label>
-                <input type="password" placeholder="Enter Password" name="psw"  required >
-                  
-                <button type="submit" id="signupbutton">S'inscrire</button>
-              </div>
-          
-              <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Annuler</button>
-              </div>
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="../src/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Nom:</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" id="signupName"
+                        oninput="validateName('signupName', 'signupName_mess')" required><br>
+                    <span id="signupInput_mess"></span><br>
+                    <label for="uname"><b>Prenom:</b></label>
+                    <input type="text" placeholder="Entrer Votre Prenom" name="surname" id="signSurname" required>
+                    <label for="uname"><b>Nom D'utilisateur:</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" id="signUsername" required>
+                    <label for="uname"><b>Email:</b></label>
+                    <input type="email" placeholder="Enter Email" name="uemail" id="signEmail" required>
+
+                    <label for="psw"><b>Mot de Passe:</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" id="signupbutton">S'inscrire</button>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                        class="cancelbtn">Annuler</button>
+                </div>
             </form>
-          </div>
-          
-          <script>
-          // Get the modal
-          var modal = document.getElementById('id02');
-          
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-              body.style.background='rgba(0,0,0,0.4)';
-              if (event.target == modal) {
-                  modal.style.display = "none";
-              }
-          }
-          </script>
-          
-          <script>
-          // Get the modal
-          var modal = document.getElementById('id01');
-          
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-              if (event.target == modal) {
-                  modal.style.display = "none";
-              }
-          }
-          </script>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id02');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                body.style.background = 'rgba(0,0,0,0.4)';
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </header>
-    <button type="button" id="rtr-btn" onclick="retour('')">&laquo;      Retour</button>
     <main class="niveau" id="sticky">
         <div class="matieres" id="matiere">
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
-                <h4 id="moduletitle">Francais</h4>
-                <button id="module-btn" onclick="accedercours('lescoursdemodule1')">Acceder</button>
-                
+                <h4 id="moduletitle">Sciences De la Vie et de La Terre (SVT) </h4>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule1','mod1','matiere')">Acceder</button>
+
             </div>
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
                 <h4 id="moduletitle">Francais</h4>
                 <button id="module-btn" onclick="accedercours('lescoursdemodule2')">Acceder</button>
-                
+
             </div>
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
                 <h4 id="moduletitle">Francais</h4>
                 <button id="module-btn" onclick="accedercours('lescoursdemodule3')">Acceder</button>
-                
+
             </div>
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
                 <h4 id="moduletitle">Francais</h4>
                 <button id="module-btn" onclick="accedercours('lescoursdemodule4')">Acceder</button>
-                
+
             </div>
         </div>
-        <div class="lescoursdemodule1" id="lescoursdemodule1">
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
+        <div id="mod1">
+            <button type="button" class="rtr-btn" id="rtr-btn" onclick="retour('')">&laquo;</button>
+            <div class="lescoursdemodule1" id="lescoursdemodule1">
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="../pdf/svt/1.pdf">Telecharger</a>
+                    <button type="button"
+                        onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
             </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
-            </div>
-        </div>        
+        </div>
         <div class="lescoursdemodule1" id="lescoursdemodule2">
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
                 <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
         </div>
         <div class="lescoursdemodule1" id="lescoursdemodule3">
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
                 <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
         </div>
         <div class="lescoursdemodule1" id="lescoursdemodule4">
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
                 <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
             <div class="cours">
                 <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem. Expedita harum provident quasi.</p>
+                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                    Expedita harum provident quasi.</p>
                 <a href="">Telecharger</a>
-                <button type="button" >Voir</button>
+                <button type="button">Voir</button>
             </div>
         </div>
         <div id="courspdf">
-            <object
-              data='../pdf/svt/la-chaleur-et-les-changements-d-etat-physique-de-la-matiere-cours-1.pdf'
-              type="application/pdf"
-              width="76%"
-              height="900"
-            
-            id="pdfhere">
-        
-              <iframe
-                src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
-                width="80%"
-                height="678"
-              >
-              <p>Ce navigator ne supporte pas PDF
-                  !</p>
-              </iframe>
-        
+            <object data='../pdf/svt/la-chaleur-et-les-changements-d-etat-physique-de-la-matiere-cours-1.pdf'
+                type="application/pdf" width="76%" height="900" id="pdfhere">
+
+                <iframe src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
+                    width="80%" height="678">
+                    <p>Ce navigator ne supporte pas PDF
+                        !</p>
+                </iframe>
+
             </object>
-          </div>
+        </div>
     </main>
     <footer>
         <div class="footer_newsletter">
@@ -345,24 +374,23 @@
                 <li id="he_">
                     <h2>CONTACT</h2>
                 </li>
-                <li><i class="fa fa-phone" aria-hidden="true"
-                        style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 22px;"></i>
+                <li><i class="fas fa-phone" aria-hidden="true"
+                        style="transform:rotate(0deg);color: #fff;margin-right: 10px;font-size: 22px;"></i>
                     +212(0)6079061</li>
-                <li><i class="fa fa-map-marker" aria-hidden="true"
-                        style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 22px;"></i>
+                <li><i class="fas fa-map-marker-alt" aria-hidden="true"
+                        style="transform:rotate(0deg);color: #fff;margin-right: 10px;font-size: 22px;"></i>
                     7487 Gaylord Fort</li>
-                <li><i class="fa fa-envelope" aria-hidden="true"
-                        style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 18px;"></i>
+                <li><i class="fa fa-envelope" aria-hidden="true" style="transform:rotate(0deg);color: #fff;"></i>
                     easy-course@gmail.com</li>
             </ul>
             <ul id="social_media">
                 <li id="he_">
-                    <h2>Suivez NousEn Social Media</h2>
+                    <h2>Social Media</h2>
                 </li>
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-twitter-square"></a></li>
-                <li><a href="#" class="fa fa-whatsapp"></a></li>
-                <li><a href="#" class="fa fa-youtube"></a></li>
+                <li><a href="#" class="fab fa-facebook"></a> facebook.com/easy-course</li>
+                <li><a href="#" class="fab fa-whatsapp"></a> +212612538694</li>
+                <li><a href="#" class="fab fa-instagram"></a> instagram.com/easy-course</li>
+                <li><a href="#" class="fab fa-facebook-messenger"></a> Cantact via Messenger</li>
             </ul>
         </div>
     </footer>

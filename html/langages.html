@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil</title>
     <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/langages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/main.js"></script>
     <script src="../js/validate.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body
@@ -21,7 +23,7 @@
                 </button>
             </li>
             <li>
-                <a><img src="../src/Copy of Easy5.png" id="logo"></a>
+                <a href="acceuil.html"><img src="../src/Copy of Easy5.png" id="logo"></a>
             </li>
             <li id="search_bar">
                 <input type="search" id="isearch" placeholder="Seacrh here">
@@ -136,38 +138,48 @@
             }
         </script>
     </header>
-    <main class="contenu_principal" id="sticky">
-        <div class="slides">
-            <center>
-                <h1 style="color: black;padding-top:50px;">
-                    <span style="color :black;">E</span>asy
-                    <span style="color:black;">C</span>ourse
-
-                </h1>
-            </center>
-            <p style="padding: 0px;">
-            <H2 style="margin-top: 20px;padding-left: 25px;"> Avoir votre Cours toujours pres de vous </H2>
-            <center>
-                <p style="padding-top: 12px;">
-                <h3 style="color: black;margin-top: 20px;">Cours, Exercices, </h3>
-                <h3 style="color: black;">Examen, Document </h3>
-                </p>
-            </center>
+    <main class="language_prn"id="language_prn">
+        <div class="english_l">
+            <h1>
+                Did You ever Wanted to be fluent in <span>English?</span>
+            </h1>
+            <p>
+                Of Course Yes !, welcome My freind you are in the right place. No prerequisites needed. Just Enroll in
+                this course and you are all set to achieve the fluency. you were hastling for it
             </p>
-            <!-- <button type="button" onclick="searchcours()" id="tr_cours"><i class="fa fa-search"
-                    style="margin-right: 10px;"></i>Trouver un cours</button> -->
         </div>
-        <center>
-            <form action="" class="acceuil-search" id="acc-search">
-                <input type="search" id="isearch_acc" placeholder="Trouver les matieres et les cours ici" class="acceuil-searchInp">
-                <button style="font-size:18px" id="button-cours">
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
-        </center>
-
-
+        <div class="french_l">
+            <h1>
+                Parler,Parlait, Parlais. Vous avez essaye plusieurs methodes pour etudier <span>Francais?</span>
+            </h1>
+            <p>
+                S'inscrire a notre programme pour benefiter de les cours de notre creative professeurs. Le probleme de
+                Communication sera de passé.
+            </p>
+        </div>
     </main>
+    <button id="sabonner" onclick="show('inscrirePourLangage')">S'abonner</button>
+    <div class="inscrirePourLangage"id="inscrirePourLangage">
+        <form action="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, hic?</p>
+            <br><label for="name">Nom <span>*</span>:</label><br><br>
+            <input type="text" name="name"   required><br><br>
+            <label for="surname">Prénom <span>*</span>:</label><br><br>
+            <input type="text" name="surname"   required><br><br>
+            <label for="address">Adresse <span>*</span>:</label><br><br>
+            <input type="text" name="address"   required><br><br>
+            <label for="phone">Téléphone <span>*</span>:</label><br><br>
+            <input type="text" name="phone" required><br><br>
+            <label for="email">Adresse Email <span>*</span>:</label><br><br>
+            <input type="email" name="email"   required><br><br>
+            <label for="language">Options de Langage <span>*</span>:</label><br><br>
+            <input type="checkbox" name="lang1"><label for="" id="lang_label">Français</label>
+            <input type="checkbox" name="lang2" ><label for="" id="lang_label">Anglais</label><br><br>
+            <input type="submit" value="Envoyer"><br><br>
+            <button type="button"id="annuler_sabboner" onclick="hide('inscrirePourLangage')">Annuler</button>
+        </form>
+    </div>
+
     <footer>
         <div class="footer_newsletter">
             <h1 style="color: white;font-weight: bold;">S'INSCRIRE À LA NEWSLETTER</h1>
@@ -183,28 +195,33 @@
                 <li id="he_">
                     <h2>CONTACT</h2>
                 </li>
-                <li><i class="fa fa-phone" aria-hidden="true"
-                        style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 22px;"></i>
+                <li><i class="fas fa-phone" aria-hidden="true"
+                        style="transform:rotate(0deg);color: #fff;margin-right: 10px;font-size: 22px;"></i>
                     +212(0)6079061</li>
-                <li><i class="fa fa-map-marker" aria-hidden="true"
-                        style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 22px;"></i>
+                <li><i class="fas fa-map-marker-alt" aria-hidden="true"
+                        style="transform:rotate(0deg);color: #fff;margin-right: 10px;font-size: 22px;"></i>
                     7487 Gaylord Fort</li>
                 <li><i class="fa fa-envelope" aria-hidden="true"
-                        style="transform:rotate(0deg);color: #A6D9F7;margin-right: 10px;font-size: 18px;"></i>
-                    easy-course@gmail.com</li>
+                        style="transform:rotate(0deg);color: #fff;"></i>
+                         easy-course@gmail.com</li>
             </ul>
-            <ul>
+            <ul id="social_media">
                 <li id="he_">
-                    <h2>Suivez NousEn Social Media</h2>
+                    <h2>Social Media</h2>
                 </li>
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fab fa-facebook"></a>  facebook.com/easy-course</li>
+                <li><a href="#" class="fab fa-whatsapp"></a> +212612538694</li>
+                <li><a href="#" class="fab fa-instagram"></a>  instagram.com/easy-course</li>
+                <li><a href="#" class="fab fa-facebook-messenger"></a> Cantact via Messenger</li>
             </ul>
         </div>
     </footer>
-
+    <script>
+        var w=window.innerWidth;
+        if (w<=760) {
+            document.getElementById('language_prn').style.display='flex';
+        }
+    </script>
 </body>
 
 </html>
