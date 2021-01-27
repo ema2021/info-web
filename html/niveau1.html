@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +11,7 @@
     <script src="../js/validate.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-
-<body
-    style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+<body>
     <header id="myHeader">
         <ul class="monnavbar">
             <li>
@@ -150,25 +147,127 @@
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
                 <h4 id="moduletitle">Francais</h4>
-                <button id="module-btn" onclick="accedercours('lescoursdemodule2')">Acceder</button>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule2','mod2','matiere')">Acceder</button>
 
             </div>
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
-                <h4 id="moduletitle">Francais</h4>
-                <button id="module-btn" onclick="accedercours('lescoursdemodule3')">Acceder</button>
+                <h4 id="moduletitle">Mathématiques</h4>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule3','mod3','matiere')">Acceder</button>
 
             </div>
             <div id="module">
                 <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
-                <h4 id="moduletitle">Francais</h4>
-                <button id="module-btn" onclick="accedercours('lescoursdemodule4')">Acceder</button>
+                <h4 id="moduletitle">Science Physiques</h4>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule4','mod4','matiere')">Acceder</button>
+
+            </div>
+            <div id="module">
+                <a href="#"><img src="../src/module1.jpg" id="modulejpg"></a>
+                <h4 id="moduletitle">Anglais</h4>
+                <button id="module-btn" onclick="accedercours('lescoursdemodule5','mod5','matiere')">Acceder</button>
 
             </div>
         </div>
         <div id="mod1">
-            <button type="button" class="rtr-btn" id="rtr-btn" onclick="retour('')">&laquo;</button>
+            <button type="button" class="rtr-btn" id="rtr-btn1" onclick="precedent('matiere','mod1','inline-grid')">&laquo;</button>
             <div class="lescoursdemodule1" id="lescoursdemodule1">
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="../pdf/svt/1.pdf">Telecharger</a>
+                    <button type="button"
+                        onclick="voir('courspdf','mod1','../pdf/svt/1.pdf')">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+            </div>
+        </div>
+        <div id="mod2">
+            <button type="button" class="rtr-btn" id="rtr-btn2" onclick="precedent('matiere','mod2','inline-grid')">&laquo;</button>
+            <div class="lescoursdemodule1" id="lescoursdemodule2">
+                <div class="cours">
+                    <h4>Titre de cours MOD2</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="../pdf/svt/1.pdf">Telecharger</a>
+                    <button type="button"
+                        onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+            </div>
+        </div>
+        <div id="mod3">
+            <button type="button" class="rtr-btn" id="rtr-btn3" onclick="precedent('matiere','mod3','inline-grid')">&laquo;</button>
+            <div class="lescoursdemodule1" id="lescoursdemodule3">
                 <div class="cours">
                     <h4>Titre de cours</h4>
                     <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
@@ -214,140 +313,105 @@
                 </div>
             </div>
         </div>
-        <div class="lescoursdemodule1" id="lescoursdemodule2">
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-        </div>
-        <div class="lescoursdemodule1" id="lescoursdemodule3">
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
+        <div id="mod4">
+            <button type="button" class="rtr-btn" id="rtr-btn4" onclick="precedent('matiere','mod4','inline-grid')">&laquo;</button>
+            <div class="lescoursdemodule1" id="lescoursdemodule4">
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="../pdf/svt/1.pdf">Telecharger</a>
+                    <button type="button"
+                        onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
             </div>
         </div>
-        <div class="lescoursdemodule1" id="lescoursdemodule4">
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button" onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
-            </div>
-            <div class="cours">
-                <h4>Titre de cours</h4>
-                <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
-                    Expedita harum provident quasi.</p>
-                <a href="">Telecharger</a>
-                <button type="button">Voir</button>
+        <div id="mod5">
+            <button type="button" class="rtr-btn" id="rtr-btn5" onclick="precedent('matiere','mod5','inline-grid')">&laquo;</button>
+            <div class="lescoursdemodule1" id="lescoursdemodule5">
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="../pdf/svt/1.pdf">Telecharger</a>
+                    <button type="button"
+                        onclick="voir('courspdf','lescoursdemodule1','../pdf/svt/1.pdf')">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
+                <div class="cours">
+                    <h4>Titre de cours</h4>
+                    <p>Rerum facilis atque eos harum eaque nihil. Doloremque quod omnis expedita sapiente voluptatem.
+                        Expedita harum provident quasi.</p>
+                    <a href="">Telecharger</a>
+                    <button type="button">Voir</button>
+                </div>
             </div>
         </div>
         <div id="courspdf">
-            <object data='../pdf/svt/la-chaleur-et-les-changements-d-etat-physique-de-la-matiere-cours-1.pdf'
+            <button type="button" class="rtr-btn" id="rtr-btn5" onclick="precedentpdf('courspdf','inline-grid')">&laquo;</button>
+            <object data=''
                 type="application/pdf" width="76%" height="900" id="pdfhere">
 
                 <iframe src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'

@@ -2,16 +2,17 @@
     text-align: center;
 }
 .matieres{
-    display: inline-grid;
-    grid-template-columns: auto auto  ;
-    /* background-color: #2196F3; */
-    padding: 10px;
     width: 76%;
+    margin: auto;
+    display: inline-grid;
+    grid-template-columns: auto auto auto ;
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
     grid-gap:2%;
 }
 #modulejpg{
-    height:70%;
-    width: 70%;
+    height:50%;
+    width: 50%;
     border-radius:4px;
     transition-duration: 1s;
 }
@@ -20,18 +21,18 @@
   transition-duration: 1s;
 }
 #module{
-    height: 350px;
+
+    height: auto;
     border-radius: 4px;
     border: 2px dashed #7d8588;
-    padding: 4%;
-    border
-    font-size: 30px;
+    padding: 6%;
+    font-size: 100%;
     text-align: center;
     /* background-color: rgb(226, 226, 220); */
 }
 #module-btn{
     color:white;
-    height: 30px;
+    height: 15%;
     background-color: #553041;
     border:none;
     border-radius:4px;
@@ -73,15 +74,15 @@
 a{
     text-decoration: none;
 }
-#rtr-btn{
+.rtr-btn{
     width: 60px;
     height: 35px;
     /* margin-top:50px; */
     margin-left: 2%;
     background-color: grey;
-    display: none;
+    /* display: none; */
     font-size: 23px;
-    padding:5px;
+    padding:1px;
 }
 #courspdf{
     display: none;
@@ -92,6 +93,7 @@ a{
     width: 96%;
     /* height: 500px; */
 }
-#mod1{
+#mod1,#mod2,#mod3,#mod4,#mod5{
+    display: none;
     
 }

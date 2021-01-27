@@ -81,7 +81,8 @@
     border-radius: 3px;
 }
 .inscrirePourLangage input:focus{
-    outline: 1px solid #552139;
+    /* outline: 1px solid #552139; */
+    background: #F5FBEF;
 }
 .inscrirePourLangage label{
     /* color: #553041; */

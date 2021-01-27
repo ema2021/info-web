@@ -1,3 +1,4 @@
+var pdfmod='';
 var rtr_btn = 0;//button de retour
 function nav_a_active(id_a) {
   x = document.getElementById(id_a).parentElement;
@@ -42,8 +43,8 @@ function accedercours(cours,mod_,matiere) {
 function voir(pdf, courses, pdfpath) {
   document.getElementById(pdf).style.display = 'block';
   document.getElementById(courses).style.display = 'none';
-  document.getElementById(pdf).data = pdfpath;
-  rtr_btn++;
+  document.getElementById('pdfhere').data = pdfpath;
+  pdfmod=courses;
 }
 function rtrbtn_(a, b) {
   document.getElementById(a).style.display = 'inline-grid';
@@ -75,9 +76,18 @@ function retour(id_pluschar = '') {
 function inscrire() {
   document.getElementById('inscrire_form').style.display = 'block';
 }
-function show(id_) {
+function show(id_,scroll_) {
   document.getElementById(id_).style.display = 'block';
+  window.scrollTo(0, scroll_);
 }
 function hide(id_) {
   document.getElementById(id_).style.display = 'none';
+}
+function precedent(dest,maintenant,displ_y){
+  document.getElementById(dest).style.display = displ_y;
+  document.getElementById(maintenant).style.display = 'none';
+}
+function precedentpdf(maintenant,displ_y){
+  document.getElementById(pdfmod).style.display = displ_y;
+  document.getElementById(maintenant).style.display = 'none';
 }
